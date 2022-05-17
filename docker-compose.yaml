@@ -1,0 +1,12 @@
+version: "3"
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - ./config.json:/home/app/config.json
+    # command:
+    #   - bash
+    #   - -c
+    #   -  sleep infinity
+    network_mode: host
